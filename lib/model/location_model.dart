@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'location_model.freezed.dart';
@@ -9,4 +11,12 @@ class LocationModel with _$LocationModel{
     required double longitude,
     required double speed,
   }) = _LocationModel;
+}
+
+@freezed
+class LocationProviderState with _$LocationProviderState {
+  factory LocationProviderState({
+    required List<LocationModel> locations,
+    required Timer? timer,
+  }) = _LocationProviderState;
 }

@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:geolocator/geolocator.dart';
-import 'package:location_tracer_app/controller/providers/location_provider_state.dart';
 import 'package:location_tracer_app/model/location_model.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
